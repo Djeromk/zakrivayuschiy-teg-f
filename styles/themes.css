@@ -26,6 +26,9 @@
 		to bottom,
 		#007f0c 0.01%,
 		#004306 100%);
+	--button-hover-color: #00CC14;
+	--heart-color: #FF0000;
+	--contour-color: #00CC14;
 }
 
 :root.theme-light {
@@ -49,6 +52,9 @@
 		to bottom,
 		#e7e7e7 0.01%,
 		#1a1a1a 100%);
+		--button-hover-color: #fff;
+		--heart-color: #FF0000;
+	--contour-color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,5 +79,8 @@
 		#007f0c,
 		#004306 100%
 	  );
+	  --button-hover-color: #00CC14;
+	  --heart-color: #FF0000;
+	--contour-color: #00CC14;
 	}
 }

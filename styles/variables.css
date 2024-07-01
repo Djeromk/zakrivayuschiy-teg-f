@@ -22,4 +22,8 @@
 		to bottom,
 		#e7e7e7 0.01%,
 		#1a1a1a 100%);
+
+	--button-hover-color: #fff;
+	--heart-color: #FF0000;
+	--contour-color: #000000;
 }
