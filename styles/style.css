@@ -284,6 +284,11 @@ button {
   transform: scaleX(1);
 }
 
+.save {
+  display: flex;
+  justify-content: center;
+}
+
 .save__button {
   position: relative;
   display: flex;

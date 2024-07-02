@@ -18,7 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <span class="header__title">&lt;/html&gt;</span>
+      <a class="header__title" href="#">&lt;/html&gt;</a>
+
       <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -259,7 +260,7 @@
           с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется.
           Познать его полностью не получится, но это тот случай, когда важен сам процесс познания.
           Ведь часто путь — и есть результат.</p>
-        <p>Место для ваших воспоминаний о начале обучения.</p>
+        <p>Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
       </article>
         <div class="like">
           <button class="card__icon-button" >
@@ -278,34 +279,35 @@
         </div>
       </li>
       </ul>
-    </main>
-    <footer>
+      <div class="save">
       <button class="button save__button" type="button"
       onclick="window['save-window'].showModal()"
       aria-controls="save-window"
-  >
-        <svg class="floppy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-          <use href="images/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog id="save-window" class="dialog-window">
-        <div class="dialog-content">
+      >
+      <svg class="floppy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+        <use href="images/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text">Сохранить на память</span>
+    </button>
+  </div>
+    <dialog id="save-window" class="dialog-window">
+      <div class="dialog-content">
         <svg class="dialog-floppy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
           <use href="images/floppy.svg#floppy"></use>
         </svg>
-          <p>
-            Вставьте дискету, чтобы продолжить
-          </p>
-          </div>
-          <form method="dialog">
-          <button type="button" class="close-button"
-          onclick="window['save-window'].close()">
-          <span class="button__text">Ок</span>
-        </button>
-        </form>
-      </dialog>
-    </footer>
-    <script src="./scripts/like.js"></script>
-  </body>
+        <p>
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <form method="dialog">
+        <button type="button" class="close-button"
+        onclick="window['save-window'].close()">
+        <span class="button__text">Ок</span>
+      </button>
+    </form>
+  </dialog>
+
+</main>
+  <script src="./scripts/like.js"></script>
+</body>
 </html>
