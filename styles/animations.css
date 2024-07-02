@@ -14,24 +14,24 @@
 */
 
 
-.like-icon.is-liked .sparks {
-	opacity: 0;
-	animation: sparks 0.3s ease-in 0.3s 1 alternate;
-  }
 
-  .core {
+.core {
 	fill: var(--background-color);
 	transition: fill 0.3s linear 0.03s;
-  }
+}
 
-  .main-body {
-	fill: var(--background-color);
-	transition: fill 0.3s linear;
-  }
+.sparks {
+	opacity: 0;
+}
 
-  .like-icon.is-liked .heart {
-	animation: heart 0.3s ease-in 0.1s 1 alternate;
-	transform-origin: center;
+.main-body {
+  fill: var(--background-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon .contour {
+	fill: var(--contour-color);
+	transition: fill 0.1s linear;
   }
 
   .like-icon:hover .core {
@@ -57,6 +57,16 @@
   }
 
   /* is-liked */
+
+  .like-icon.is-liked .sparks {
+	opacity: 0;
+	animation: sparks 0.3s ease-in 0.3s 1 alternate;
+  }
+
+  .like-icon.is-liked .heart {
+	animation: heart 0.3s ease-in 0.1s 1 alternate;
+	transform-origin: center;
+  }
 
   .like-icon.is-liked .core {
 	fill: var(--heart-color);
