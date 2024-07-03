@@ -44,17 +44,17 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 327px;
+  padding-block: 136px 25px;
   inline-size: 100%;
+  min-height: 327px;
   max-inline-size: 700px;
   text-align: center;
+  font-family: var(--accent-text);
+  justify-content: center;
+  text-transform: uppercase;
   background-color: var(--background-color);
   color: var(--accent-color);
-  font-family: var(--accent-text);
-  text-transform: uppercase;
   border: 2px solid var(--accent-color);
-  padding-block: 136px 25px;
 }
 
 .header__title {
@@ -95,10 +95,10 @@ button {
 }
 
 .theme-menu__button:disabled::before {
+  content: "▶";
   position: absolute;
   inset-inline-start: -15px;
   animation: play 0.6s ease-in-out infinite alternate;
-  content: "▶"
 }
 
 .theme-menu__button:hover {
@@ -138,9 +138,9 @@ button {
 .post {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  max-width: 700px;
   margin-block-start: 100px;
+  max-width: 700px;
+  gap: 50px;
 }
 
 .post__item {
@@ -151,11 +151,11 @@ button {
 .post__title {
   padding-inline: 10px;
   padding-block-start: 5px;
-  font-size: 18px;
+  min-height: 31px;
   line-height: 21.78px;
+  font-size: 18px;
   border-block-end: 2px solid var(--accent-color);
   font-variation-settings: 'wght' var(--title-weight, 700);
-  min-height: 31px;
 }
 
 .post__img {
@@ -185,11 +185,11 @@ button {
   display: flex;
   flex-direction: column;
   font-variation-settings: 'wght' var(--main-text-weight, 400);
+  line-height: 21px;
   padding-inline: 25px;
   padding-block-start: 30px;
   border-block-start: 2px solid var(--accent-color);
   gap: 27px;
-  line-height: 21px;
 }
 
 
@@ -227,11 +227,11 @@ button {
 
 .card__like-button {
   position: relative;
+  padding: 6px 17px;
   width: 130px;
   height: 38px;
   appearance: none;
   border: 2px solid var(--accent-color);
-  padding: 6px 17px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -302,10 +302,10 @@ button {
 
 .dialog-window {
   padding: 30px;
+  max-inline-size: 352px;
   font-family: var(--accent-text);
   background-color: var(--background-color);
   color: var(--accent-color);
-  max-inline-size: 352px;
 }
 
 .dialog-window[open] {
@@ -317,9 +317,9 @@ button {
 .dialog-content {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 1.5;
+  text-transform: uppercase;
   gap: 13px;
 }
 
