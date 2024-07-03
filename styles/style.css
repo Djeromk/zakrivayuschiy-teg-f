@@ -35,6 +35,13 @@
   padding-block-end: 100px;
 }
 
+button {
+  appearance: none;
+  border: none;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -93,15 +100,6 @@
   inset-inline-start: -15px;
   animation: play 0.6s ease-in-out infinite alternate;
   content: "▶"
-}
-
-@keyframes play {
-  from {
-   transform: translate(0);
-  }
-  to {
-   transform: translate(4px);
-  }
 }
 
 .theme-menu__button:hover {
@@ -184,14 +182,6 @@
   text-transform: uppercase;
 }
 
-@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
-  .image-label {
-    text-stroke: 1px var(--background-color);
-    -webkit-text-stroke: 1px var(--background-color);
-    text-shadow: none;
-  }
-}
-
 .post__content {
   display: flex;
   flex-direction: column;
@@ -203,12 +193,6 @@
   line-height: 21px;
 }
 
-button {
-  appearance: none;
-  border: none;
-  background-color: var(--background-color);
-  cursor: pointer;
-}
 
 .like {
   display: flex;
@@ -223,7 +207,6 @@ button {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   block-size: 38px;
-
 }
 
 .card__icon-button:focus {
@@ -353,6 +336,7 @@ dialog::backdrop {
 }
 
 .close-button {
+  position: relative;
   width: 100%;
   appearance: none;
   border: 3px solid var(--accent-color);
@@ -386,6 +370,13 @@ li:nth-child(8) div .post__img {
   filter: contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg);
 }
 
+@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+  .image-label {
+    text-stroke: 1px var(--background-color);
+    -webkit-text-stroke: 1px var(--background-color);
+    text-shadow: none;
+  }
+}
 
 @media (width <=375px) {
   .save__button {

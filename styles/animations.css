@@ -13,7 +13,16 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+/* анимация стрелочки .theme-menu__button */
 
+@keyframes play {
+	from {
+	 transform: translate(0);
+	}
+	to {
+	 transform: translate(4px);
+	}
+  }
 
 .core {
 	fill: var(--background-color);
