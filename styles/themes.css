@@ -6,81 +6,78 @@
 */
 
 :root.theme-dark {
-	--main-text-weight: 465;
-	--title-weight: 785;
-	--background-color: #000000;
-	--accent-color: #00CC14;
-	--background-image: repeating-linear-gradient(
-		90deg,
-		#000 0px,
-		#000 2px,
-		transparent 2px,
-		transparent 4px),
-	repeating-linear-gradient(
-		0deg,
-		#000 0px,
-		#000 2px,
-		transparent 2px,
-		transparent 4px),
-	linear-gradient(
-		to bottom,
-		#007f0c 0.01%,
-		#004306 100%);
-	--button-hover-color: #00CC14;
-	--heart-color: #FF0000;
-	--contour-color: #00CC14;
-}
-
-:root.theme-light {
-	--main-text-weight: 400;
-	--title-weight: 700;
-	--background-color: #FFFFFF;
-	--accent-color: #000000;
-	--background-image: repeating-linear-gradient(
-		90deg,
-	#d3d3d3 0px,
-	#d3d3d3 2px,
-	transparent 2px,
-	transparent 4px),
-	repeating-linear-gradient(
-		0deg,
-		#d3d3d3 0px,
-		#d3d3d3 2px,
-		transparent 2px,
-		transparent 4px),
-	linear-gradient(
-		to bottom,
-		#e7e7e7 0.01%,
-		#1a1a1a 100%);
-		--button-hover-color: #fff;
-		--heart-color: #FF0000;
-	--contour-color: #000000;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--main-text-weight: 465;
-		--title-weight: 785;
-		--background-color: #000;
-		--accent-color: #00CC14;
-		--background-image: repeating-linear-gradient(90deg,
-	#000 0px,
-	#000 2px,
-	transparent 2px,
-	transparent 4px),
-	repeating-linear-gradient(
-		0deg,
+  --main-text-weight: 465;
+  --title-weight: 785;
+  --background-color: #000000;
+  --accent-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      90deg,
       #000 0px,
       #000 2px,
       transparent 2px,
       transparent 4px
-	),linear-gradient(
-		to bottom,
-		#007f0c,
-		#004306 100%
-	  );
-	  --button-hover-color: #00CC14;
-	  --heart-color: #FF0000;
-	--contour-color: #00CC14;
-	}
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
+  --button-hover-color: #00cc14;
+  --heart-color: #ff0000;
+  --contour-color: #00cc14;
+}
+
+:root.theme-light {
+  --main-text-weight: 400;
+  --title-weight: 700;
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-hover-color: #fff;
+  --heart-color: #ff0000;
+  --contour-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-weight: 465;
+    --title-weight: 785;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        #000 0px,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306 100%);
+    --button-hover-color: #00cc14;
+    --heart-color: #ff0000;
+    --contour-color: #00cc14;
+  }
 }
